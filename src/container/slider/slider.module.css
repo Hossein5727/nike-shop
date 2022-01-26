@@ -1,0 +1,70 @@
+.slider{
+    background: url('../../assets/img/wall.jpg')  ;
+    /* background-size: cover; */
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.sliderImg{
+    width: 550px;
+    height: 550px;
+}
+
+.sliderBg {
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    position: absolute;
+    right: 32%;
+    z-index: -1;
+}
+
+.sliderTilte{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.sliderPrice{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 55px;
+    font-weight:200;
+    border: 1px solid ;
+    padding: 1px;
+}
+
+.buyBtn{
+    font-size: 30px;
+    padding: 12px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #111;
+    border: 1px solid rgb(44, 41, 41);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.buyBtn:hover{
+    background-color: #fff;
+    color: #111;
+}
