@@ -3,13 +3,15 @@ import logo from '../../assets/img/sneakers.png'
 import search from '../../assets/img/search.png'
 import style from './header.module.css'
 import { linkImageData } from '../../data/linkImageData'
+import { UseLengthSlideAction } from '../../provider/LengthSlide'
 
 function Header({ slide }) {
 
+    const { changeLength } = UseLengthSlideAction()
 
     const moveSlide = (id) => {
-
-        console.log(id);
+        changeLength(id)
+        // console.log(id);
         slide.current.style.transform = `translateX(${-100 * id}vw)`
     }
 
