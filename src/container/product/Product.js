@@ -4,7 +4,7 @@ import ProductItem from './ProductItem'
 import style from './product.module.css'
 import { UseLengthSlide } from '../../provider/LengthSlide'
 
-function Product() {
+function Product({ openPaymantTool }) {
 
     const lengthSlide = UseLengthSlide()
 
@@ -16,6 +16,7 @@ function Product() {
                         <ProductItem
                             item={item}
                             key={item.id}
+                            openPaymantTool={openPaymantTool}
                         />
                     )}
                 </>

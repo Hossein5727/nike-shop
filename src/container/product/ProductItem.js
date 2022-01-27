@@ -3,7 +3,7 @@ import img1 from '../../assets/img/air.png'
 import style from './productItem.module.css'
 
 
-function ProductItem({ item }) {
+function ProductItem({ item, openPaymantTool }) {
 
     const [lengthImg, setLengthImg] = useState(1)
 
@@ -40,7 +40,7 @@ function ProductItem({ item }) {
                 </div>
             </div>
 
-            <button className={style.buyProduct}>BUY NOW</button>
+            <button className={style.buyProduct} onClick={openPaymantTool}>BUY NOW</button>
         </section>
     )
 }
