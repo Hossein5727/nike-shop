@@ -50,3 +50,9 @@
 .imgItem{
     width: 100%;
 }
+
+@media screen and (max-width:460px) {
+    .gallery{
+        display: none;
+    }
+}

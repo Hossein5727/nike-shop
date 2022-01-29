@@ -156,18 +156,18 @@
 }
 
 .buyProduct{
-    left: 30%;
+    left: 25%;
 }
+}
+
+@media screen and (max-width:390px) {
+    .buyProduct{
+        left: 23%;
+    }
 }
 
 @media screen and (max-width:360px) {
-    .productTitle{
-        font-size: 3rem;
-    }
-
     .buyProduct{
-        left: 22%;
-        padding: 10px;
-        min-width: 100px;
+        left: 19%;
     }
 }
