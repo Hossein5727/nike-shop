@@ -159,13 +159,13 @@
 }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:360px) {
     .productTitle{
         font-size: 3rem;
     }
 
     .buyProduct{
-        left: 25%;
+        left: 22%;
         padding: 10px;
         min-width: 100px;
     }
