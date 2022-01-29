@@ -57,10 +57,11 @@
 }
 
 .color{
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     width: 30px;
     height: 30px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 .sizesPoduct{
