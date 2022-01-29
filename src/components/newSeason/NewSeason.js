@@ -1,4 +1,6 @@
 import React from 'react'
+import img1 from '../../assets/img/pexels1.jpeg'
+import img2 from '../../assets/img/pexels2.jpeg'
 import style from './newSeason.module.css'
 
 function NewSeason() {
@@ -7,7 +9,7 @@ function NewSeason() {
 
             <div className={style.nsItem}>
                 <img
-                    src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    src={img1}
                     alt="Img"
                     className={style.nsImg}
                 />
@@ -24,7 +26,7 @@ function NewSeason() {
 
             <div className={style.nsItem}>
                 <img
-                    src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    src={img2}
                     alt="Img"
                     className={style.nsImg}
                 />
