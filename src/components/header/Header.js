@@ -16,7 +16,7 @@ function Header({ slide }) {
     }
 
     return (
-        <nav>
+        <nav id='nav'>
             <div className={style.columnTop}>
                 <div className={style.logo}>
                     <img

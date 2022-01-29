@@ -54,3 +54,22 @@ nav{
     margin-right: 2rem;
     cursor: pointer;
 }
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 0.5rem;
+        font-size: 15px;
+    }
+
+    .searchBar{
+        display: none;
+    }
+
+    .columnBottom{
+        flex-wrap: wrap;
+    }
+
+    .columnBottom h1{
+        margin: 0.5rem;
+    }
+}

@@ -1,0 +1,52 @@
+.gallery{
+    padding: 50px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallryItem{
+    flex: 1;
+    margin: 50px;
+    position: relative;
+}
+
+
+.gallryItem:hover .titleItem {
+    opacity: 1;
+    left: 70px;
+    text-align: center;
+}
+
+.gallryItem:hover .layer {
+    opacity: 0.7;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #dc2626;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.titleItem{
+    position: absolute;
+    bottom: 45%;
+    left: 0px;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0;
+    width: 200px;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.imgItem{
+    width: 100%;
+}

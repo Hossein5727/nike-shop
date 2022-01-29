@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
-import './App.css';
-import { Features, Header, Paymant } from './components';
-import { Product, Slider } from './container';
 import LengthSlide from './provider/LengthSlide';
+import { Features, Footer, Gallery, Header, NewSeason, Paymant } from './components';
+import { Product, Slider } from './container';
+import './App.css';
 
 function App() {
 
@@ -18,19 +18,24 @@ function App() {
   }
 
   return (
-    <LengthSlide>
-      <Header slide={slide} />
-      <Slider slide={slide} />
-      <Features />
-      <Product
-        openPaymantTool={openPaymantTool}
-      />
-      {isOpenPaymantTool && (
-        <Paymant
-          closePaymantTool={closePaymantTool}
+    <>
+      <LengthSlide>
+        <Header slide={slide} />
+        <Slider slide={slide} />
+        <Features />
+        <Product
+          openPaymantTool={openPaymantTool}
         />
-      )}
-    </LengthSlide>
+        {isOpenPaymantTool && (
+          <Paymant
+            closePaymantTool={closePaymantTool}
+          />
+        )}
+      </LengthSlide>
+      <Gallery />
+      <NewSeason />
+      <Footer />
+    </>
   );
 }
 

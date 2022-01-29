@@ -11,7 +11,7 @@ function Product({ openPaymantTool }) {
     return (
         <section className={style.product}>
             {products.map(item => (
-                <>
+                <div>
                     {item.id === lengthSlide && (
                         <ProductItem
                             item={item}
@@ -19,7 +19,7 @@ function Product({ openPaymantTool }) {
                             openPaymantTool={openPaymantTool}
                         />
                     )}
-                </>
+                </div>
             ))}
         </section>
     )

@@ -1,0 +1,55 @@
+.nsContainer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.nsItem{
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nsImg{
+    width: 100%;
+    height: 500px;
+}
+
+.nsTitle {
+    font-size: 40px;
+    margin: 1.5rem auto;
+}
+  
+.nsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .nsContainer{
+        flex-direction: column;
+    }
+
+    .nsItem{
+        width: 100%;
+    }
+
+    .nsImg{
+        width: 100%;
+        height: 400px;
+    }
+
+    .nsTitle{
+        margin: 1rem auto;
+        font-size: 35px;
+    }
+
+    .nsItem:nth-child(2){
+        margin: 2rem 0;
+    }
+}

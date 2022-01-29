@@ -16,7 +16,7 @@ function Slider({ slide }) {
                         <div className={style.sliderBg} style={{ backgroundColor: item.bg }}></div>
                         <h1 className={style.sliderTilte}>{item.title} <br /> {item.title2}</h1>
                         <h1 className={style.sliderPrice} style={{ borderColor: item.bg }}>${item.price}</h1>
-                        <button className={style.buyBtn}>BUY NOW!</button>
+                        <a href='#product'><button className={style.buyBtn}>BUY NOW!</button></a>
                     </div>
                 ))}
             </div>

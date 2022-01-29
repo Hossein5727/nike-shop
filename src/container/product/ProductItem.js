@@ -12,7 +12,7 @@ function ProductItem({ item, openPaymantTool }) {
     }
 
     return (
-        <section key={item.id} className={style.product}>
+        <section id='product' key={item.id} className={style.product}>
 
             <div className={style.imgProduct}>
                 <img

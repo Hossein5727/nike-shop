@@ -44,6 +44,7 @@ function Paymant({ closePaymantTool }) {
                     <input
                         placeholder='Card Number'
                         className={style.input}
+                        type="password"
                     />
                     <div className={style.formDataPaymant}>
                         {paymantData2.map(item => (
@@ -57,7 +58,7 @@ function Paymant({ closePaymantTool }) {
                     </div>
                 </div>
 
-                <button className={style.btnPaymant}>Paymant</button>
+                <button  className={style.btnPaymant} onClick={closePaymantTool}>Paymant</button>
 
                 <button className={style.btnClose} onClick={closePaymantTool}>X</button>
             </div>

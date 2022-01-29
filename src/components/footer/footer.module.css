@@ -1,0 +1,107 @@
+.footer{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #e2e8f0;
+}
+
+.leftColumn{
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menuLeftColumn{
+    margin: auto 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLeftColumn h1{
+    margin-bottom: 1rem;
+    font-size: 23px;
+}
+
+.menuLeftColumn p{
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.rightColumn{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs{
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.contactUsTitle{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.fInput ,.fBtn{
+    padding: 10px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.icon{
+    margin-right: 0.5rem;
+}
+
+.copyRight{
+    margin-top: 2rem;
+    font-size: 14;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width:768px) {
+    .footer{
+        margin-top: 6rem;
+        flex-direction: column;
+    }
+
+    .leftColumn{
+        width: 100%;
+        justify-content: center;
+        flex: 1;
+        margin-bottom: 3rem;
+    }
+
+    .menuLeftColumn{
+        margin: auto 1rem;
+    }
+
+    .menuLeftColumn h1{
+        font-size: 20px;
+    }
+
+    .rightColumn{
+        width: 100%;
+    }
+
+    .followUs h2{
+        text-align: center;
+    }
+    
+    .followUs div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icon{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+}

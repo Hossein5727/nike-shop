@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 6rem auto;
+    gap: 30px;
 }
 
 .feature{
