@@ -30,7 +30,7 @@ function ProductItem({ item, openPaymantTool }) {
                 </p>
                 <div className={style.colorsProduct} >
                     {item.colors.map(item => (
-                        <div className={style.color} onClick={() => nextImg(item.id)} style={{ background: item.code }}></div>
+                        <button className={style.color} onClick={() => nextImg(item.id)} style={{ background: item.code }}></button>
                     ))}
                 </div>
                 <div className={style.sizesPoduct}>
